@@ -10,11 +10,11 @@ As a rule of thumb, you should use bulk API when you have more than 10.000 items
 
 ## What's in the code?
 
-This is very simple wrapper around ``elasticsearch`` python client. It allows for loading file, creating dynamic mapping (can be skipped) and loading data into created index. Additionally, it saves JSON file to separate variable defined as pandas dataframe for inspection or change of index orientation (This is dependant on your needs).
+This is very simple wrapper around ``elasticsearch`` Python client. It allows loading file, creating dynamic mapping (can be skipped) and loading data into created index. Additionally, it saves JSON file to separate variable defined as pandas dataframe for inspection or change of index orientation (This is dependant on your needs).
 
 It uses tqdm library for showing progress on your loading.
 
-You can change what keys should be indexed by bulk API, by editing ```generate_actions``` function from using whole dictionary to only specific keys.
+You can change what keys should be indexed by bulk API by editing ```generate_actions``` function from using whole dictionary to only specific keys.
 
 ## TODO
 - Add tests
