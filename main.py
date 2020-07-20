@@ -22,9 +22,9 @@ def schema_validator(db, orient_choice):
 
     '''Refer to documentation, specially for information about string format - orient.
        This function should not run with big files or if you already have correct orientation.
-     '''
+    '''
     # https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_json.html
-    
+
     dataframe_db = pd.read_json(db, orient=orient_choice)
     return dataframe_db
 
@@ -32,7 +32,6 @@ def index(db={}, index_name=''):
 
     '''If you want to supply your own mapping in appropriate format to elasticsearch you can skip calling index() function.
        This function generates mapping
-
     '''
 
     start  = time.time()
